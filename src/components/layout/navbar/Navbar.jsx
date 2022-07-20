@@ -14,12 +14,12 @@ import {
 
 import AddTransaction from "../../transaction/AddTransaction";
 
-import fetchMe from "../../../query/fetchMe";
+import FetchMe from "../../../query/FetchMe";
 import { removeAccessToken } from "../../../services/localStorage";
 import walletIcon from "../../../assets/wallet.png";
 
 function Navbar() {
-  const { data } = fetchMe();
+  const { data } = FetchMe();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
