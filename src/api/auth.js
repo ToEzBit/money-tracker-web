@@ -9,3 +9,8 @@ export const login = async (input) => {
   const res = await axios.post(`/auth/login`, input);
   return res.data;
 };
+
+export const getMe = async () => {
+  const res = await axios.get(`/auth/me`);
+  return res.data;
+};

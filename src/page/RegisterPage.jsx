@@ -34,7 +34,7 @@ function RegisterPage() {
       setConfirmPassword("");
       setAccessToken(data.token);
       mutation.reset();
-      navigate("/home");
+      navigate("/");
     },
   });
 

@@ -30,7 +30,7 @@ function LoginPage() {
       setPassword("");
       setAccessToken(data.token);
       mutation.reset();
-      navigate("/home");
+      navigate("/");
     },
   });
 
