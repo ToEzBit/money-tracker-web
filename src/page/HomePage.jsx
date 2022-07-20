@@ -72,6 +72,8 @@ function HomePage() {
                 onChange={(e) => {
                   setSelectedDate(e.target.value);
                   setInputDate(e.target.value);
+                  setDynamicColorAllDayButton({});
+                  setDynamicColorTodayButton({});
                   setAllDay(false);
                 }}
               />
