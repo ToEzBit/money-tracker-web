@@ -9,14 +9,18 @@ import {
   useColorModeValue,
   Avatar,
   Text,
+  useDisclosure,
 } from "@chakra-ui/react";
-import fetchMe from "../../../query/fetchMe";
 
+import AddTransaction from "../../transaction/AddTransaction";
+
+import fetchMe from "../../../query/fetchMe";
 import { removeAccessToken } from "../../../services/localStorage";
 import walletIcon from "../../../assets/wallet.png";
 
 function Navbar() {
   const { data } = fetchMe();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <>
@@ -45,7 +49,10 @@ function Navbar() {
                     </Flex>
                   </>
                   <HStack spacing="3">
-                    <Button colorScheme="teal">ADD TRANSACTION</Button>
+                    <Button colorScheme="teal" onClick={onOpen}>
+                      ADD TRANSACTION
+                    </Button>
+                    <AddTransaction isOpen={isOpen} onClose={onClose} />
                     <Button
                       colorScheme="red"
                       onClick={() => {
