@@ -36,7 +36,7 @@ function HomePage() {
   }, []);
 
   return (
-    <Box w="100vw" mh="100%" h="100vh" bg="blackAlpha.200">
+    <Box w="100vw" minH="100vh" h="100%" bg="blackAlpha.200">
       <Container maxW="container.md" pt={8}>
         <Box bg="white" p={4} borderRadius="md">
           <Center>
