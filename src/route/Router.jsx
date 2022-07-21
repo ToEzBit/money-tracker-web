@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import LoginPage from "../page/LoginPage";
 import RegisterPage from "../page/RegisterPage";
 import HomePage from "../page/HomePage";
+import ReportPage from "../page/ReportPage";
 import Navbar from "../components/layout/navbar/Navbar";
 import fetchMe from "../query/fetchMe";
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
           <>
             <Route path="/" element={<Navbar />}>
               <Route path="" element={<HomePage />} />
+              <Route path="/report" element={<ReportPage />} />
               <Route path="*" element={<HomePage />} />
             </Route>
           </>

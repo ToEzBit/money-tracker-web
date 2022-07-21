@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import {
   Box,
   Button,
@@ -48,6 +48,12 @@ function Navbar() {
                       </Flex>
                     </Flex>
                   </>
+                  <Link to="/" style={{ marginTop: "13px" }}>
+                    Home Page
+                  </Link>
+                  <Link to="/report" style={{ marginTop: "13px" }}>
+                    Report
+                  </Link>
                   <HStack spacing="3">
                     <Button colorScheme="teal" onClick={onOpen}>
                       ADD TRANSACTION

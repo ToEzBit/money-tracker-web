@@ -31,6 +31,7 @@ function LoginPage() {
       setAccessToken(data.token);
       mutation.reset();
       navigate("/");
+      window.location.reload();
     },
   });
 
