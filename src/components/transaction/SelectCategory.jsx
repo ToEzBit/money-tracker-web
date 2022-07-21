@@ -68,8 +68,9 @@ function SelectCategory({
             <VStack align="stretch" my={4}>
               {switchTab ? (
                 <>
-                  {Income.map((el) => (
+                  {Income.map((el, idx) => (
                     <ListItem
+                      key={idx}
                       w="100%"
                       p={4}
                       role="button"
@@ -88,8 +89,9 @@ function SelectCategory({
                 </>
               ) : (
                 <>
-                  {Expense.map((el) => (
+                  {Expense.map((el, idx) => (
                     <ListItem
+                      key={idx}
                       w="100%"
                       p={4}
                       role="button"
