@@ -14,7 +14,7 @@ function ReportPage() {
     labels: ["Total Income", "Total Expense"],
     datasets: [
       {
-        data: [data.user.totalIncome, data.user.totalExpense],
+        data: [data.user.totalIncome || 1, data.user.totalExpense || 1],
         backgroundColor: ["rgba(54, 162, 235, 0.2)", "rgba(255, 99, 132, 0.2)"],
         borderColor: ["rgba(54, 162, 235, 1)", "rgba(255, 99, 132, 1)"],
         borderWidth: 1,
