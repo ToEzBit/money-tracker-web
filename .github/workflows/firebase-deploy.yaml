@@ -11,10 +11,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Install Dependencies
-        run: npm install -g npm@9.6.0 && npm ci
+        run: npm npm ci
       - name: Build
         env:
-          CI: false
+          CI: true
         run: npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2

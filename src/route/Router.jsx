@@ -5,9 +5,9 @@ import RegisterPage from "../page/RegisterPage";
 import HomePage from "../page/HomePage";
 import ReportPage from "../page/ReportPage";
 import Navbar from "../components/layout/navbar/Navbar";
-import FetchMe from "../query/FetchMe";
+// import FetchMe from "../query/FetchMe";
 function Router() {
-  const { data } = FetchMe();
+  // const { data } = FetchMe();
   return (
     <>
       <Routes>
