@@ -11,7 +11,7 @@ function Router() {
   return (
     <>
       <Routes>
-        {data?.user ? (
+        {true ? (
           <>
             <Route path="/" element={<Navbar />}>
               <Route path="" element={<HomePage />} />
